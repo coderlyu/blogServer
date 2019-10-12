@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册测试</title>
+</head>
+
+<body>
+    <h2>用户注册测试</h2>
+    <form action="http://localhost:3000/user/createUser" method="POST">
+        姓名： <input type="text" name="name" /> <br>
+        头像：<input type="text" name="avatar" /> <br>
+        简介：<input type="text" name="info" /> <br>
+        邮箱：<input type="text" name="email" /> <br>
+        QQ：<input type="text" name="qq" /> <br>
+        github：<input type="text" name="github" /> <br>
+        座右铭：<input type="text" name="motto" /> <br>
+        <input type="submit" value="注册" /> <br>
+    </form>
+    <h2>获取主页推荐测试</h2>
+    <form action="http://localhost:3000/article/getRecommend" method="POST">
+        页数： <input type="text" name="page" /> <br>
+        数量：<input type="text" name="number" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>通过分类id获取文章</h2>
+    <form action="http://localhost:3000/article/getAriticleByCate" method="POST">
+        页数： <input type="text" name="page" /> <br>
+        数量：<input type="text" name="number" /> <br>
+        类别：<input type="text" name="category_id" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>文件上传</h2>
+    <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+        页数： <input type="text" name="page" /> <br>
+        文件：<input type="file" name="number" id="file" /> <br>
+        类别：<input type="text" name="category_id" /> <br>
+        <input type="submit" value="提交" id="btn" /> <br>
+    </form>
+    <script src="./jQuery3.4.1.min.js"></script>
+</body>
+
+</html>
